@@ -1,0 +1,29 @@
+@import 'variables';
+
+.size-logo-image {
+    width: 120px;
+    padding: 11px 0;
+}
+
+.size-user-image {
+    width: 30px;
+    height: 30px;
+}
+
+.icon-toggler {
+    color: $orange-color;
+    margin: 0.3rem;
+}
+
+.navbar {
+    &__help-button {
+        color: $help-icon-color;
+        margin: 0.3rem;
+    }
+    &__search-button {
+        color: $white-color;
+        margin: 0.3rem;
+    }
+}
+
+    

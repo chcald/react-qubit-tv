@@ -1,0 +1,111 @@
+@import 'variables';
+
+#outer {
+    position:relative;
+    z-index:1;
+ }
+ #inner {
+     position:relative;
+     @media (min-width: 768px) {
+         top: 5rem;
+         position:absolute;
+         z-index:10;
+        }
+    }
+
+.item-title {
+    display: inline-block;
+    margin: 0;
+    line-height: 1.5;
+    padding-left: 0.5rem;
+    text-shadow: 1px 1px 3px #000;
+    width: 100%;
+}
+
+.additional-info-detail {
+    display: flex;
+}
+
+.additional-info-detail>li{
+    padding: 0 10px 0 0;
+}
+
+.rated-1 {
+    background-image: url(https://ringo.cdnar.net/assets/public/qubit/production/calificacion_incaa_atp_white.svg);
+}
+
+.icon-audiotrack {
+    background-image: url(https://ringo.cdnar.net/assets/public/qubit/production/icon-audiotrack.svg);
+}
+
+.quality-hd {
+    background-image: url(https://ringo.cdnar.net/assets/public/qubit/production/quality-hd.svg);
+}
+
+.imdb {
+    background-image: url(https://ringo.cdnar.net/assets/public/qubit/production/icon-imdb.svg);
+    margin: 6px 5px 0 0;
+}
+
+.additional-info-detail li {
+    display: table-cell;
+    padding: 0 7px 0 0;
+    font-size: 14px;
+}
+
+.additional-info-detail .icons {
+    width: 23px;
+    height: 19px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin: 3px 3px 0 2px;
+}
+
+.quality-hd {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 30px;
+    height: 19px;
+    display: inline-block;
+    margin: 0 0 -7px;
+}
+
+.rated {
+    width: 30px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    height: 19px;
+    display: inline-block;
+    margin: 0 0 -7px;
+}
+
+.image-left {
+    display: none;
+    @media (min-width: 768px) {
+       display: unset;
+    }
+}
+
+.info-text > p > a {
+    color: $orange-color;
+}
+
+.info-text {
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+.btn.item-play {
+    border-radius: 25px;
+    background-color: $play-button-color;
+    border-color: $play-button-color;
+    width: 100%;
+    margin: 1rem;
+    @media (min-width: 768px) {
+        width: 11rem;
+    }
+}
+
+.btn.item-play:hover {
+    background-color: $play-button-hover-color;
+    border-color: $play-button-hover-color;
+}

@@ -1,0 +1,46 @@
+@import 'components/variables';
+
+body {
+  font-family: 'Roboto-Regular', sans-serif;
+  color: $white-color;
+  line-height: 17px;
+  background-color: $background-color;
+  margin: 0;
+  font-size: 14px;
+}
+
+a {
+  color: $white-color;
+}
+
+a:hover {
+  color: $hover-icon-color;
+}
+
+a:focus {
+  color: $focus-icon-color;
+  border-color: none;
+}
+
+.navbar-nav .nav-link.active {
+  color: orange;
+}
+
+.navbar {
+  background-color: $blue-dark-color;
+}
+
+.dropdown-item {
+  background-color: $blue-dark-color;
+  color: $white-color;
+}
+
+.dropdown-item:hover {
+  background-color: $blue-dark-color;
+  color: orange;
+}
+
+
+.dropdown-menu {
+  background-color: $blue-dark-color;
+}
